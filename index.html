@@ -1,17 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartPoint</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZTech Store</title>
+  <link rel="stylesheet" href="dfas.css" />
 </head>
-<header>
-
-</header>
 <body>
-    
+ 
+  <!-- ========== HEADER ========== -->
+  <header id="header">
+ 
+    <a href="#" id="logo">S</a>
+ 
+    <div id="buscador">
+      <input type="text" placeholder="Buscar productos..." />
+      <button>Buscar</button>
+    </div>
+ 
+    <div id="acciones">
+      <a href="#" id="carrito">🛒 </a>
+      <button id="menu">☰</button>
+    </div>
+ 
+  </header>
+ 
+ 
+  <!-- ========== CARRUSEL 1 ========== -->
+  <div class="carrusel-contenedor">
+ 
+    <button class="flecha izquierda" onclick="moverCarrusel('carrusel1', -1)">‹</button>
+ 
+    <div class="carrusel" id="carrusel1">
+      <!-- Agrega o quita slides aquí -->
+      <!-- Para poner una imagen: <div class="slide"><img src="tu-foto.jpg" alt="Banner" /></div> -->
+      <div class="slide">Banner 1 — Slide 1</div>
+      <div class="slide">Banner 1 — Slide 2</div>
+      <div class="slide">Banner 1 — Slide 3</div>
+    </div>
+ 
+    <button class="flecha derecha" onclick="moverCarrusel('carrusel1', 1)">›</button>
+ 
+    <div class="puntos" id="puntos-carrusel1"></div>
+ 
+  </div>
+ 
+ 
+  <!-- ========== CARRUSEL 2 ========== -->
+  <div class="carrusel-contenedor">
+ 
+    <button class="flecha izquierda" onclick="moverCarrusel('carrusel2', -1)">‹</button>
+ 
+    <div class="carrusel" id="carrusel2">
+      <div class="slide">Banner 2 — Slide 1</div>
+      <div class="slide">Banner 2 — Slide 2</div>
+      <div class="slide">Banner 2 — Slide 3</div>
+    </div>
+ 
+    <button class="flecha derecha" onclick="moverCarrusel('carrusel2', 1)">›</button>
+ 
+    <div class="puntos" id="puntos-carrusel2"></div>
+ 
+  </div>
+ 
+   <!-- ========== CARRUSEL 3 ========== -->
+  <div class="carrusel-contenedor">
+ 
+    <button class="flecha izquierda" onclick="moverCarrusel('carrusel3', -1)">‹</button>
+ 
+    <div class="carrusel" id="carrusel3">
+      <div class="slide">Banner 3 — Slide 1</div>
+      <div class="slide">Banner 3 — Slide 2</div>
+      <div class="slide">Banner 3 — Slide 3</div>
+    </div>
+ 
+    <button class="flecha derecha" onclick="moverCarrusel('carrusel3', 1)">›</button>
+ 
+    <div class="puntos" id="puntos-carrusel3"></div>
+ 
+  </div>
+  <div id="beneficios">
+ 
+    <div class="beneficio">
+      <p class="beneficio-titulo">Precios Competitivos</p>
+      <p class="beneficio-texto">Tecnología a tu alcance.</p>
+    </div>
+ 
+    <div class="beneficio">
+      <p class="beneficio-titulo">Soporte Experto</p>
+      <p class="beneficio-texto">La ayuda que necesitas.</p>
+    </div>
+ 
+    <div class="beneficio">
+      <p class="beneficio-titulo">Pago En Línea</p>
+      <p class="beneficio-texto">Compra con seguridad.</p>
+    </div>
+ 
+    <div class="beneficio">
+      <p class="beneficio-titulo">Entrega Rápida</p>
+      <p class="beneficio-texto">A todo el territorio nacional.</p>
+    </div>
+ 
+  </div>
+ 
+ 
+  
+ 
 </body>
-<footer>
-    
-</footer>
+<footer>COPYRIGHT - SMARTPOINT 2026</footer>
 </html>
