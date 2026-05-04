@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Formulario de Contacto</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .form-container {
+        background: #fff;
+        padding: 25px;
+        border-radius: 8px;
+        width: 320px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        font-size: 13px;
+        color: #555;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .input-icon {
+        position: relative;
+    }
+
+    .input-icon input,
+    .input-icon textarea {
+        width: 100%;
+        padding: 10px 35px 10px 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        outline: none;
+        font-size: 14px;
+        background: #f9f9f9;
+    }
+
+    .input-icon textarea {
+        resize: none;
+        height: 80px;
+    }
+
+    .input-icon i {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #999;
+    }
+
+    .btn-submit {
+        width: 100%;
+        padding: 12px;
+        background: #a4b83f;
+        border: none;
+        border-radius: 25px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .btn-submit:hover {
+        background: #8fa332;
+    }
+</style>
+
+<!-- Iconos (Font Awesome) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="form-container">
+    <form action="#" method="post">
+
+        <div class="form-group">
+            <label>Correo electrónico</label>
+            <div class="input-icon">
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <i class="fa fa-envelope"></i>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Nombre completo</label>
+            <div class="input-icon">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <i class="fa fa-user"></i>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Comentario</label>
+            <div class="input-icon">
+                <textarea name="comentario" placeholder="Comentario" required></textarea>
+            </div>
+        </div>
+
+        <button type="submit" class="btn-submit">Please Contact Me</button>
+
+    </form>
+</div>
+
+</body>
+</html>
